@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import { Navbar, NavbarBrand, Jumbotron, Badge } from "reactstrap";
 
 class Header extends Component {
-	constructor(props) {
-		super(props);
-	}
 	render() {
 		return (
 			<>
@@ -13,7 +10,7 @@ class Header extends Component {
 						<NavbarBrand>
 							<div>
 								<span className="fa fa-shopping-cart fa-2x"></span>
-								<Badge className="danger"> </Badge>
+								<Badge className="danger">{this.props.item}</Badge>
 							</div>
 						</NavbarBrand>
 					</div>
